@@ -1,0 +1,11 @@
+# Config (contains API keys)
+config.yaml
+
+# Generated outputs
+outputs/
+
+# Usage tracking
+usage.json
+
+# Binary
+ui-advisor-chatgpt-mcp

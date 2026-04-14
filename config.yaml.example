@@ -1,0 +1,10 @@
+openai_api_key: "${OPENAI_API_KEY}"  # read from env if prefixed with $
+review_model: "gpt-5.4-mini"         # for vision-based design review
+image_model: "gpt-image-1"           # for high quality mockups
+image_model_cheap: "gpt-image-1-mini" # for quick iterations
+max_budget_usd: 10.00                # monthly budget, resets on the 1st
+daily_limit_images: 30                # resets at midnight
+default_image_quality: "medium"      # low, medium, high
+default_image_size: "1024x1024"      # 1024x1024, 1536x1024, 1024x1536
+asset_quality: "high"                # for logos/icons
+save_path: "./outputs"               # where generated images are saved
