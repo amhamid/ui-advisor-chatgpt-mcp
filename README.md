@@ -35,15 +35,17 @@ openai_api_key: "sk-..."             # hardcoded (not recommended)
 Using `go run` (no build step):
 
 ```bash
-claude mcp add ui-advisor -- go run ~/path/to/ui-advisor-chatgpt-mcp/main.go
+claude mcp add ui-advisor -s user -- go run ~/path/to/ui-advisor-chatgpt-mcp/main.go
 ```
 
 Or compile first for faster startup:
 
 ```bash
 go build -o ui-advisor-chatgpt-mcp .
-claude mcp add ui-advisor -- ~/path/to/ui-advisor-chatgpt-mcp/ui-advisor-chatgpt-mcp
+claude mcp add ui-advisor -s user -- ~/path/to/ui-advisor-chatgpt-mcp/ui-advisor-chatgpt-mcp
 ```
+
+The `-s user` flag makes the server globally available across all projects. Without it, the server is only available in the current project.
 
 ## Tools
 
