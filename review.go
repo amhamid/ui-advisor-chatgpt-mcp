@@ -44,7 +44,7 @@ func DesignReview(cfg *Config, usage *UsageData, imagePath, context, focus strin
 
 	reqBody := map[string]interface{}{
 		"model":      cfg.ReviewModel,
-		"max_tokens": 1500,
+		"max_completion_tokens": 1500,
 		"messages": []map[string]interface{}{
 			{"role": "system", "content": designReviewSystemPrompt},
 			{"role": "user", "content": []map[string]interface{}{
